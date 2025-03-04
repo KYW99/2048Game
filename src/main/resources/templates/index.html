@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>숫자 퍼즐 게임</title>
+    <link rel="stylesheet" href="/css/styles.css">
+</head>
+<body>
+<div class="game-container">
+    <h1>2048</h1>
+    <div class="board-container">
+        <div id="board" class="board">
+            <!-- 4x4 보드가 여기에 그려집니다 -->
+        </div>
+    </div>
+    <div>
+        <p style="margin-bottom: 10px;">점수: <span id="score">0</span></p>
+        <div class="rules">
+            <h2>게임 규칙</h2>
+            <ul style="list-style-type: none; margin-top: 40px">
+                <li style="margin-bottom: 10px;">빈 공간을 이용해 숫자 타일을 이동하세요.</li>
+                <li style="margin-bottom: 10px;">숫자 타일을 2048로 만들면 게임에서 승리합니다.</li>
+                <li>방향키(←, →, ↑, ↓)를 사용하여 타일을 움직일 수 있습니다.</li>
+            </ul>
+        </div>
+        <button id="startGameBtn" onclick="startNewGame()">새 게임 시작</button>
+
+    </div>
+</div>
+
+<script src="/js/script.js"></script>
+</body>
+</html>
