@@ -31,6 +31,7 @@ public class GameService {
         game.setBoard(boardToJson(board));  // board를 JSON 형식으로 저장
         game.setScore(0);
         game.setGameOver(false);
+        game.setGameClear(false);
         return gameRepository.save(game);
     }
 

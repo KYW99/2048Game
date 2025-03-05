@@ -16,7 +16,6 @@ import org.springframework.web.bind.annotation.*;
 public class GameController {
 
     private final GameService gameService;
-    private final GameRepository gameRepository;
 
     @PostMapping("/start")
     public ResponseEntity<Game> startNewGame() {
@@ -47,7 +46,6 @@ public class GameController {
 
         return ResponseEntity.ok(response);  // 이동 후 게임 상태 반환
     }
-
 
 
     @GetMapping("/{gameId}/board")
